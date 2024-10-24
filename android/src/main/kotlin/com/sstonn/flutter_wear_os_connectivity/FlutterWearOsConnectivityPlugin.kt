@@ -172,9 +172,7 @@ class FlutterWearOsConnectivityPlugin : FlutterPlugin, MethodCallHandler, Activi
                         }
                     } catch (e: Exception) {
                         scope(Dispatchers.Main).launch {
-                            result.success(
-                                result.success(emptyMap<String, Map<String, Any>>())
-                            )
+                            result.success(emptyMap<String, Map<String, Any>>())
                         }
                     }
                 }
